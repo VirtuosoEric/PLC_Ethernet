@@ -16,7 +16,7 @@ def write_to_plc(TCP_IP,TCP_PORT,MESSAGE):
     # data = s.recv(BUFFER_SIZE)
     s.close()
 
-MESSAGE = "STS"+"20".decode("hex")+"R500"+"20".decode("hex")+"01"+"0D".decode("hex")
-# MESSAGE = "RSS"+"20".decode("hex")+"R500"+"20".decode("hex")+"01"+"0D".decode("hex")
+# MESSAGE = "STS"+"20".decode("hex")+"R500"+"20".decode("hex")+"01"+"0D".decode("hex")
+MESSAGE = "RSS"+"20".decode("hex")+"R500"+"20".decode("hex")+"01"+"0D".decode("hex")
 write_to_plc(TCP_IP,TCP_PORT,MESSAGE)
 
